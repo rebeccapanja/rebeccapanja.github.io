@@ -1,0 +1,144 @@
+@import "mixins.less";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #778182;
+  .font-smoothing();
+}
+
+a {
+ color: #43464D;
+ cursor: pointer;
+
+ &:hover,
+ &:focus {
+  text-decoration: none;
+  color: #778182;
+ }
+}
+
+h1, h2, h3 {
+  color: #43464D;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 700;
+  padding: 1.5em 0 1em 0;
+  border: none;
+  font-family: 'Montserrat';
+  letter-spacing: -0.01em;
+  font-size: 1em;
+}
+
+
+.row.animated {
+  .animation-delay(1.5s);
+}
+
+.intro {
+  margin-bottom: 3em;
+
+  .name {
+    font-size: 5em;
+    color:  #ED484D;
+    .animation-delay(0.2s);
+    .animation-duration(1s);
+  }
+
+  .social {
+    color: #ED484D;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+}
+
+.bio {
+  border-top: 1px solid #eee;
+  padding-top: 3em;
+  line-height: 2;
+  font-size: 1.1em;
+  .animation-delay(1.2s);
+  .animation-duration(1.3s);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 2em;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 2em 0 1.5em 0;
+}
+
+.all-projects,
+.project {
+  .transition (opacity 0.3s linear);
+}
+
+h3 {
+  color: #1D2331;
+  margin: 1.5em 0 0.75em 0;
+  font-size: 1.2em;
+}
+
+.all-projects.github:hover .project {
+  opacity: 0.3;
+}
+
+.all-projects.github:hover .project:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+// .all-projects a:hover h3 {
+//   color: #ED484D;
+// }
+
+.project {
+  padding: 2em 0;
+
+  .tags {
+    color: #ccc;
+  }
+
+  img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    color: #778182;
+  }
+
+  h3 {
+    margin: 0.5em 0 0.75em 0;
+  }
+}
+
+footer {
+  margin-top: 4em;
+  padding-bottom: 2em;
+  font-size: 0.9em;
+
+  .copyright {
+    font-size: 0.8em;
+    float: left;
+  }
+
+  .social {
+    padding: 0.5em;
+
+    &:hover {
+       color: #ED484D;
+    }
+  }
+}
