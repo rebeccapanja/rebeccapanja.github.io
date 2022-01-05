@@ -5,9 +5,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 module.exports = {
   siteMetadata: {
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Rebecca Panja`,
-    siteTitleAlt: `Rebecca Panja - Portfolio and Blog`,
-    siteHeadline: `Rebecca Panja`,
+    siteTitle: `Site Title`,
+    siteTitleAlt: `Site Title - Portfolio and Blog`,
+    siteHeadline: `Site Title`,
     siteUrl: `https://rebeccapanja.github.io/`,
     siteDescription: `Portfolio and blog`,
     siteLanguage: `en`,

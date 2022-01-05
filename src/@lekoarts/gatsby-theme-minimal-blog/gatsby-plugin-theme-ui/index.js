@@ -13,6 +13,8 @@ const theme = merge(tailwind, {
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
+    // accentPrimary: `aqua`,
+    // accentSecondary: `yellow`,
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
@@ -23,6 +25,8 @@ const theme = merge(tailwind, {
         heading: tailwind.colors.white,
         divide: tailwind.colors.gray[8],
         muted: tailwind.colors.gray[8],
+        // accentPrimary: `gray`,
+        // accentSecondary: `green`,
       },
     },
   },
@@ -200,6 +204,9 @@ const theme = merge(tailwind, {
       fontSize: [1, 2, 3],
       color: `text`,
     },
+  },
+  section: {
+    backgroundColor: "red",
   },
 });
 

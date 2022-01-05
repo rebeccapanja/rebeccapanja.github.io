@@ -11,7 +11,7 @@ const Footer = () => {
         boxSizing: `border-box`,
         display: `flex`,
         justifyContent: `space-between`,
-        mt: [6],
+        // mt: [6],
         color: `secondary`,
         a: {
           variant: `links.secondary`,
@@ -35,9 +35,9 @@ const Footer = () => {
         {` `}
         <Link
           aria-label="Link to the theme author's website"
-          href="https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Theme"
+          href="https://rebeccapanja.github.io/"
         >
-          LekoArts
+          Rebecca
         </Link>
       </div>
     </footer>
