@@ -5,9 +5,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 module.exports = {
   siteMetadata: {
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Site Title`,
-    siteTitleAlt: `Site Title - Portfolio and Blog`,
-    siteHeadline: `Site Title`,
+    siteTitle: `Rebecca Panja`,
+    siteTitleAlt: `Rebecca Panja - Portfolio and Blog`,
+    siteHeadline: `Rebecca Panja`,
     siteUrl: `https://rebeccapanja.github.io/`,
     siteDescription: `Portfolio and blog`,
     siteLanguage: `en`,
@@ -24,10 +24,10 @@ module.exports = {
             title: `Blog`,
             slug: `/blog`,
           },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
+          // {
+          //   title: `About`,
+          //   slug: `/about`,
+          // },
         ],
         externalLinks: [
           {
@@ -35,8 +35,12 @@ module.exports = {
             url: `https://twitter.com/rebeccapanja`,
           },
           {
-            name: `Homepage`,
-            url: `https://rebeccapanja.github.io/`,
+            name: `Medium`,
+            url: `https://rebecca.medium.com/`,
+          },
+          {
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/rebeccapanja`,
           },
         ],
       },

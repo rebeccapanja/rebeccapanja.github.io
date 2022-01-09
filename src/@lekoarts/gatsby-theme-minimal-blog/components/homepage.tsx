@@ -10,11 +10,13 @@ import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/
 import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata";
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 import { visuallyHidden } from "@lekoarts/gatsby-theme-minimal-blog/src/styles/utils";
+import { heroContainer } from "./heroLayout.module.css";
 // @ts-ignore
 import Hero from "../texts/hero";
 // @ts-ignore
-import Bottom from "../texts/bottom";
-import { heroContainer } from "./heroLayout.module.css";
+import Resources from "../texts/resources";
+// @ts-ignore
+import Writing from "../texts/writing";
 
 type PostsProps = {
   posts: {
@@ -51,10 +53,10 @@ const Homepage = ({ posts }: PostsProps) => {
         </div>
       </section>
       {/* Make a common css style for this */}
-      <section
+      {/* <section
         sx={{
           mb: 0,
-          pt: [5],
+          pt: [3],
           p: { fontSize: [1, 2, 3] },
           variant: `section_hero`,
           // backgroundColor: `accentPrimary`,
@@ -68,19 +70,38 @@ const Homepage = ({ posts }: PostsProps) => {
           </Title>
           <Listing posts={posts} showTags={false} />
         </div>
-      </section>
+      </section> */}
+
       <section
         sx={{
           mb: 0,
-          pt: [5],
+          pt: [3],
           p: { fontSize: [1, 2, 3] },
           variant: `section_hero`,
           // backgroundColor: `accentSecondary`,
         }}
       >
         <div className={heroContainer}>
+          <Title text="Writing"> </Title>
           <List>
-            <Bottom />
+            <Writing />
+          </List>
+        </div>
+      </section>
+
+      <section
+        sx={{
+          mb: 0,
+          pt: [3],
+          p: { fontSize: [1, 2, 3] },
+          variant: `section_hero`,
+          // backgroundColor: `accentSecondary`,
+        }}
+      >
+        <div className={heroContainer}>
+          <Title text="Favorite Books and Courses"></Title>
+          <List>
+            <Resources />
           </List>
         </div>
       </section>
