@@ -31,10 +31,6 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/rebeccapanja`,
-          },
-          {
             name: `Medium`,
             url: `https://rebecca.medium.com/`,
           },
