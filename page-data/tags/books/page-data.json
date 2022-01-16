@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
     "path": "/tags/books",
-    "result": {"data":{"allPost":{"nodes":[{"slug":"/book-highlights-for-wright-brothers-wrong-story","title":"Book Highlights for Wright Brothers, Wrong Story","date":"01.10.2022","excerpt":"Author: William Hazelgrove Ingenuity was a necessity This was at a time when ingenuity was prized because it was necessary. There were no…","timeToRead":9,"description":null,"tags":[{"name":"Books","slug":"books"},{"name":"Non-Fiction","slug":"non-fiction"},{"name":"Highlights","slug":"highlights"}]}]}},"pageContext":{"slug":"books","name":"Books","formatString":"DD.MM.YYYY"}},
+    "result": {"data":{"allPost":{"nodes":[{"slug":"/book-notes-for-wright-brothers-wrong-story","title":"Book Notes for Wright Brothers, Wrong Story","date":"01.10.2022","excerpt":"Overall thoughts This is one of the books that made me realize how much harder life was back in the day. Researching anything, whether it be…","timeToRead":9,"description":null,"tags":[{"name":"Books","slug":"books"},{"name":"Non-Fiction","slug":"non-fiction"},{"name":"Highlights","slug":"highlights"}]}]}},"pageContext":{"slug":"books","name":"Books","formatString":"DD.MM.YYYY"}},
     "staticQueryHashes": ["2744905544","3090400250","318001574"]}
