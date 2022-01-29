@@ -11,6 +11,7 @@ import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-s
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 import { visuallyHidden } from "@lekoarts/gatsby-theme-minimal-blog/src/styles/utils";
 import { heroContainer } from "./heroLayout.module.css";
+
 // @ts-ignore
 import Hero from "../texts/hero";
 // @ts-ignore
@@ -39,73 +40,74 @@ const Homepage = ({ posts }: PostsProps) => {
   const { siteTitle } = useSiteMetadata();
 
   return (
-    <HeroLayout>
-      <h1 sx={visuallyHidden}>{siteTitle}</h1>
-      <section
-        sx={{
-          paddingBottom: "100px",
-          p: { fontSize: [1, 2, 3] },
-          variant: `section_hero`,
-        }}
-      >
-        <div className={heroContainer}>
-          <Hero />
-        </div>
-      </section>
-      {/* Make a common css style for this */}
-      {/* <section
-        sx={{
-          mb: 0,
-          pt: [3],
-          p: { fontSize: [1, 2, 3] },
-          variant: `section_hero`,
-          // backgroundColor: `accentPrimary`,
-        }}
-      >
-        <div className={heroContainer}>
-          <Title text="Latest Posts">
-            <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
-              Read all posts
-            </Link>
-          </Title>
-          <Listing posts={posts} showTags={false} />
-        </div>
-      </section> */}
+    <div>
+      <HeroLayout>
+        <h1 sx={visuallyHidden}>{siteTitle}</h1>
+        <section
+          sx={{
+            paddingBottom: "100px",
+            p: { fontSize: [1, 2, 3] },
+            variant: `section_hero`,
+          }}
+        >
+          <div className={heroContainer}>
+            <Hero />
+          </div>
+        </section>
 
-      <section
-        sx={{
-          mb: 0,
-          pt: [3],
-          p: { fontSize: [1, 2, 3] },
-          variant: `section_hero`,
-          // backgroundColor: `accentSecondary`,
-        }}
-      >
-        <div className={heroContainer}>
-          <Title text="Writing"> </Title>
-          <List>
-            <Writing />
-          </List>
-        </div>
-      </section>
-
-      <section
-        sx={{
-          mb: 0,
-          pt: [3],
-          p: { fontSize: [1, 2, 3] },
-          variant: `section_hero`,
-          // backgroundColor: `accentSecondary`,
-        }}
-      >
-        <div className={heroContainer}>
-          <Title text="Favorite Books and Courses"></Title>
-          <List>
-            <Resources />
-          </List>
-        </div>
-      </section>
-    </HeroLayout>
+        {/* Make a common css style for this */}
+        <section
+          sx={{
+            mb: 0,
+            pt: [3],
+            p: { fontSize: [1, 2, 3] },
+            variant: `section_hero`,
+            // backgroundColor: `accentSecondary`,
+          }}
+        >
+          <div className={heroContainer}>
+            <Title text="Writing"> </Title>
+            <List>
+              <Writing />
+            </List>
+          </div>
+        </section>
+        <section
+          sx={{
+            mb: 0,
+            pt: [3],
+            p: { fontSize: [1, 2, 3] },
+            variant: `section_hero`,
+            // backgroundColor: `accentPrimary`,
+          }}
+        >
+          <div className={heroContainer}>
+            <Title text="Book Notes">
+              <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
+                Read all posts
+              </Link>
+            </Title>
+            <Listing posts={posts} showTags={false} />
+          </div>
+        </section>
+        <section
+          sx={{
+            mb: 0,
+            pt: [3],
+            p: { fontSize: [1, 2, 3] },
+            variant: `section_hero`,
+            // backgroundColor: `accentSecondary`,
+          }}
+        >
+          <div className={heroContainer}>
+            <Title text="Favorite Books and Resources"></Title>
+            <List>
+              <Resources />
+            </List>
+          </div>
+        </section>
+      </HeroLayout>
+    </div>
   );
 };
 
