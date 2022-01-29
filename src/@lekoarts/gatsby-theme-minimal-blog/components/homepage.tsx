@@ -11,6 +11,7 @@ import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-s
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 import { visuallyHidden } from "@lekoarts/gatsby-theme-minimal-blog/src/styles/utils";
 import { heroContainer } from "./heroLayout.module.css";
+import headerbg from "./headerbg.png";
 
 // @ts-ignore
 import Hero from "../texts/hero";
@@ -41,6 +42,10 @@ const Homepage = ({ posts }: PostsProps) => {
 
   return (
     <div>
+      <img src={headerbg} sx={{ width: "100%" }} />
+      {/* <div className={heroContainer}>
+        <Hero />
+      </div> */}
       <HeroLayout>
         <h1 sx={visuallyHidden}>{siteTitle}</h1>
         <section
