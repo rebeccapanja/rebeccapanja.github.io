@@ -43,23 +43,7 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <div>
       <img src={headerbg} sx={{ width: "100%" }} />
-      {/* <div className={heroContainer}>
-        <Hero />
-      </div> */}
       <HeroLayout>
-        <h1 sx={visuallyHidden}>{siteTitle}</h1>
-        <section
-          sx={{
-            paddingBottom: "100px",
-            p: { fontSize: [1, 2, 3] },
-            variant: `section_hero`,
-          }}
-        >
-          <div className={heroContainer}>
-            <Hero />
-          </div>
-        </section>
-
         {/* Make a common css style for this */}
         <section
           sx={{
