@@ -64,14 +64,14 @@ const Homepage = ({ posts }: PostsProps) => {
         <section
           sx={{
             mb: 0,
-            pt: [3],
+            pt: 0,
             p: { fontSize: [1, 2, 3] },
             variant: `section_hero`,
             // backgroundColor: `accentPrimary`,
           }}
         >
           <div className={heroContainer}>
-            <Title text="Book Notes">
+            <Title text="Notes and Highlights">
               <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
                 Read all posts
               </Link>
@@ -81,8 +81,8 @@ const Homepage = ({ posts }: PostsProps) => {
         </section>
         <section
           sx={{
-            mb: 0,
-            pt: [3],
+            mt: 0,
+            pt: 0,
             p: { fontSize: [1, 2, 3] },
             variant: `section_hero`,
             // backgroundColor: `accentSecondary`,

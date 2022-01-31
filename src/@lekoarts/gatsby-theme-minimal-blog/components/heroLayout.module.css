@@ -3,3 +3,7 @@
   max-width: 1024px;
   margin: 0 auto;
 }
+
+mark {
+  background-color: #d8c3ff;
+}
