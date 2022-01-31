@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx",
     "path": "/tags",
-    "result": {"data":{"allPost":{"group":[{"fieldValue":"Books","totalCount":1},{"fieldValue":"Highlights","totalCount":1},{"fieldValue":"Non-Fiction","totalCount":1}]}},"pageContext":{}},
+    "result": {"data":{"allPost":{"group":[{"fieldValue":"Book","totalCount":2},{"fieldValue":"Books","totalCount":2},{"fieldValue":"Course","totalCount":1},{"fieldValue":"Educational","totalCount":1},{"fieldValue":"Highlights","totalCount":3},{"fieldValue":"Non-Fiction","totalCount":2},{"fieldValue":"Notes","totalCount":1},{"fieldValue":"Writing","totalCount":1}]}},"pageContext":{}},
     "staticQueryHashes": ["2744905544","3090400250","318001574"]}
