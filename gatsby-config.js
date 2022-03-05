@@ -8,13 +8,23 @@ module.exports = {
     siteTitle: `Rebecca Panja`,
     siteTitleAlt: `Rebecca Panja - Portfolio and Blog`,
     siteHeadline: `Rebecca Panja`,
-    siteUrl: `https://rebeccapanja.github.io/`,
+    siteUrl: `https://rebeccapanja.github.io`,
     siteDescription: `Portfolio and blog`,
     siteLanguage: `en`,
     // siteImage: `/banner.jpg`,
     author: `@rebeccapanja`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://rebeccapanja.github.io",
+        sitemap: "https://rebeccapanja.github.io/sitemap/sitemap-index.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
@@ -58,7 +68,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
